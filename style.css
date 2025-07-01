@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1 {
+  margin: 50px 0 20px 0;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+body {
+  line-height: 2;
+}
+header {
+  text-align: center;
+  font-size: 25px;
+  font-family: "Playfair Display", serif;
+}
+.principal {
+  color: #037bc0;
+}
+.margen__nav {
+  border-top: 1px solid #e1e1e1;
+}
+.linea__nav {
+  padding: 20px 0px;
+  display: flex;
+  justify-content: space-between;
+}
+.contenedor {
+  max-width: 1200px;
+  margin: 0px auto;
+}
+a {
+  text-decoration: none;
+  color: #000;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+}
+/* inicio de nuestro */
+.cat__titulo {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 20px;
+}
+.nuestros__productos {
+  padding-top: 50px;
+  max-width: 1200px;
+
+  margin: 0px auto;
+}
+.titulo__nuestro {
+  text-align: center;
+}
+.contenedor__nuestros {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+/* estructura de cada contenedor  */
+.contenedor__producto1 {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
+.contenedor__producto2 {
+  grid-column: 1/4;
+}
+.contenedor__producto3 {
+  grid-column: 4/7;
+}
+.contenedor__producto4 {
+  grid-column: 1/3;
+}
+.contenedor__producto5 {
+  grid-column: 3/5;
+}
+.contenedor__producto6 {
+  grid-column: 5/7;
+}
+/* Seccion de las imagenes*/
+.img__producto1 {
+  height: 430px;
+  width: 100%;
+  object-fit: cover;
+}
+/* Contedido de todos los productos */
+.contenido {
+  color: #fff;
+  background-color: #037bc0;
+  padding: 20px;
+  text-align: center;
+}
+h3 {
+  font-size: 30px;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 5px;
+}
+.parrafo__nuestros {
+  margin-bottom: 5px;
+  font-family: "Raleway", sans-serif;
+}
+.precio__nuestros {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 5px;
+  font-size: 28px;
+}
+.agregar__carrito {
+  color: #fff;
+  background-color: #8cbc00;
+  display: block;
+  font-weight: 900;
+  padding: 10px;
+  transition: background-color 0.3s ease-out;
+  text-transform: uppercase;
+}
+/* cambio de color no estaba en la fuente asi que lo vi en el html */
+.agregar__carrito:hover {
+  background-color: #769c02;
+  cursor: pointer;
+}
+/* Imagenes */
+.img__mediano {
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+}
+.img__pequeño {
+  height: 270px;
+  width: 100%;
+  object-fit: cover;
+}
+/* todo footer */
+.final {
+  padding-top: 50px;
+  margin-top: 50px;
+  border-top: 1px solid #e1e1e1;
+}
+.final__contenedor {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.final__navegacion a {
+  display: block;
+  font-weight: 400;
+}
+.marca__agua {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 16px;
+  font-family: "Raleway", sans-serif;
+}
+/* media header */
+@media (max-width: 768px) {
+  .linea__nav {
+    padding: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
+}
+/* todo nuestros */
+@media (max-width: 768px) {
+  .cat__titulo {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px){
+.contenedor__nuestros{
+  display: block;
+}
+}
+@media (max-width: 768px){
+  .contenedor__producto1{
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px){
+  .contenedor__producto2{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px){
+  .contenedor__producto3{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px){
+  .contenedor__producto4{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px){
+  .contenedor__producto5{
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px){
+  h3{
+    font-size: 24px;
+  }
+}
+@media (max-width: 768px){
+.final__contenedor{
+  display: block;
+  text-align: center;
+}
+}
+@media (max-width: 768px){
+.final__navegacion{
+  margin-bottom: 20px;
+}
+}
